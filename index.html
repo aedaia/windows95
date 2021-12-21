@@ -12,8 +12,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" id="switcher-id" href="">
+        <link rel="stylesheet" href="light.css">
+       
 
 
 </head>
@@ -71,19 +71,9 @@
             
         </div>
         <div class="card-body">
-            <div class="theme-switches" style= "text-align: left;">
-
-                <div data-theme="light" class="switch" id="switch-1"></div>
-    
-                <div data-theme="sky" class="switch" id="switch-2"></div>
-    
-                <div data-theme="blue" class="switch" id="switch-3"></div>
-    
-                <div data-theme="dark" class="switch" id="switch-4"></div>
-    
-            </div>
-
-            
+            <button id="toggle" class="button">Change theme</button>
+         
+   
             
         </div>
     </div>
@@ -107,21 +97,41 @@
 
 
                 <a href="" class="btn social-button"><img
-                        src="assets/icons/directory_folder_options-5.png" class="icon-16"> </a>
+                        src="assets/email.png" style="width: 22px"> </a>
                 <a href="" class="btn social-button"><img
-                        src="assets/icons/directory_folder_options-5.png" class="icon-16"> </a>
+                        src="assets/linkedin.png" style="width: 24px"> </a>
                 <a href="" class="btn social-button"><img
-                        src="assets/icons/directory_folder_options-5.png" class="icon-16"> </a>
+                        src="assets/instagram.png" style="width: 24px"> </a>
             </div>
-            <div class="col-4 time" style=" color: gray">Eden Sinclair >> Designer</div>
+            <div class="col-4 time"><div id="MyClockDisplay" class="clock" onload="showTime()"></div> </div>
+
+            <script>
+                function startTime() {
+                  const today = new Date();
+                  let h = today.getHours();
+                  let m = today.getMinutes();
+                  let s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                  setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+                </script>
         </div>
 
     </footer>
 
     <!-- Scripts -->
 
-    <script src="color.js"></script>
+    <script src="script.js"></script>
+  
     <script src="dragging.js"></script>
+    <script src="clock.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

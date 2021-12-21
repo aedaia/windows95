@@ -19,59 +19,27 @@
   
   /* Body styles */
 
-  */
-  .container{
-      margin:0pt;
-  }
-  
-  .iconBar{
-      float: right;
-      
-  }
-  
   
   .aboutMe{
       
-      margin-top: 20px; 
-      width: 300px; 
-      height: 300px; 
-      text-align: center; 
-      border: solid;
-      border-width: 2px;
       border-bottom-color: var(--topborder-color);
       border-right-color: var(--topborder-color);
       border-left-color: var(--bottomborder-color);
       border-top-color: var(--bottomborder-color);
   
   }
-  .application{
-  width: 120px;
-  /* background-color: red; */
-  height: 90px;
-  text-align: center;
-  vertical-align: center;
-  }
-  
+
   h3{
   color: var(--primary-color) !important;
-  font-weight: 100 ;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 15px;
+
   
   }
   body {
       background: var(--back-color);
-      letter-spacing: 0.2pt;
-      font-family: 'VT323', monospace;
       color: var(--primary-color);
-      padding-bottom: 28px;
+
   }
   
-  .bg-cloud{
-      background-image: url(clouds2.jpg);
-      color:#212529;
-  }
   
   /*
   
@@ -88,111 +56,47 @@
   
   */
   header {
-    position: relative;
     background-color: var(--dark);
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+
   }
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  header .container {
-    position: relative;
-    z-index: 2;
-  }
-  /*
-  
-  Scrollbar (only chrome & safari)
-  
-  */
-  ::-webkit-scrollbar {
-    width: 25px;
-  }
-  ::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement {
-      display: block
-  }
-  ::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment {
-      display: none
-  }
+
   ::-webkit-scrollbar-button:vertical:increment {
-      width: 25px;
-      background: var(--ui-color) url(combo.png) no-repeat 50%;
-      height: 28.5px;
-      margin: 1px 1px 1px 10px;
-      -webkit-transform: rotateX(-90deg);
-      transform: rotateX(-90deg);
-      -webkit-transform: rotateY(-90deg);
-      transform: rotateY(-90deg);
+      
+      background: var(--ui-color);
       border: 1px outset var(--topborder-color);
-      border-shadow: 1px 1px #000;
   }
   ::-webkit-scrollbar-button:vertical:decrement {
-      width: 25px;
+  
       background: var(--ui-color) url(comboup.png) no-repeat 50%;
-      height: 25px;
-      margin: 1px 1px 1px 10px;
-      transform: rotateX(180deg);
-      -webkit-transform: rotateY(180deg);
+      
       border: 1px outset var(--topborder-color);
-      border-shadow: 1px 1px #000
+     
   }
-  ::-webkit-scrollbar-track{
-      background-image: url(background.bmp)
+  
   }
   ::-webkit-scrollbar-thumb:vertical {
       border: 1px outset var(--topborder-color);
-      border-shadow: 1px 1px #000;
-      height: 40px;
+      
       background-color: var(--ui-color)
   }
-  ::-webkit-scrollbar-corner:vertical {
-      background-color: #000
-  }
-  :-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
-      display: block
-  }
-  ::-webkit-scrollbar-button:horizontal:end:decrement,::-webkit-scrollbar-button:horizontal:start:increment {
-      display: none
+  
   }
   ::-webkit-scrollbar-button:horizontal:increment {
       background: var(--ui-color) url(comboright.png) no-repeat 50%;
-      -webkit-transform: rotateX(-90deg);
-      transform: rotateX(-90deg);
-      -webkit-transform: rotateY(-90deg);
-      transform: rotateY(-90deg)
+      
   }
   ::-webkit-scrollbar-button:horizontal:decrement,::-webkit-scrollbar-button:horizontal:increment {
-      width: 18px;
-      height: 18px;
-      margin: 1px 1px 1px 10px;
+      
       border: 1px outset var(--topborder-color);
-      border-shadow: 1px 1px #000
   }
+      
   ::-webkit-scrollbar-button:horizontal:decrement {
       background: var(--ui-color) url(comboleft.png) no-repeat 50%;
-      transform: rotateX(180deg);
-      -webkit-transform: rotateY(180deg)
+      
   }
-  ::-webkit-scrollbar-track-piece {
-      margin: 1px;
-  }
+  
   ::-webkit-scrollbar-thumb:horizontal {
       border: 1px outset var(--topborder-color);
-      border-shadow: 1px 1px #000;
-      height: 40px;
       background-color: var(--ui-color)
   }
   
@@ -202,49 +106,33 @@
   
   */
   .btn{
-      border-width: 2px;
-      border-style: outset;
       border-color: var(--topborder-color);
       border-right-color: var(--bottomborder-color);
       border-bottom-color: var(--bottomborder-color);
       background: var(--ui-color);
       color: var(--text-color);
-      padding: 0 0 4px;
-      border-radius: 1px;
   }
   .btn:hover {
       border: 2px inset var(--topborder-color);
       background: var(--ui-color);
       color: var(--bottomborder-color);
-      box-shadow: -1px -1px #000;
   }
   .btn:focus {
       border: 2px inset var(--topborder-color) !important;
       background: var(--ui-color);
       color: var(--bottomborder-color);
-      box-shadow: -1px -1px #000 !important;
-      outline: 0 !important;
-      background: url(background.bmp);
   }
   .btn:active {
       border: 2px inset var(--topborder-color) !important;
       color: var(--bottomborder-color);
-      box-shadow: -1px -1px #000 !important;
-      outline: 0 !important;
-      background: url(background.bmp);
+
+ 
   }
   
-  .btn-primary{
-      padding-left: 8px;
-      padding-right: 8px;
-  }
-  button:focus{
-      outline: 1px dotted;
-  }
+
   .btn.disabled,.btn:disabled{
-      cursor: default;
       background-color: var(--ui-color);
-      border-style: outset;
+
       border-color: var(--topborder-color);
       border-right-color: var(--bottomborder-color);
       border-bottom-color: var(--bottomborder-color);
@@ -260,8 +148,6 @@
   
   */
   .card{
-      border: solid;
-      border-width: 2px;
       border-bottom-color: var(--bottomborder-color);
       border-right-color: var(--bottomborder-color);
       border-left-color: var(--topborder-color);
@@ -269,33 +155,18 @@
       background: var(--ui-color);
       color:var(--text-color);
   }
-  .card.square{
-      border-radius: 0px;
-  }
-  .card.square .card-header{
-      border-radius: 0px;
-  }
+
   .card.w95 .card-header{
       background: var(--card-header);
       /* OR #000082 is better?*/
   }
-  .card-body{
-      font-size: 24px;
-  }
+ 
   .card-header{
       background: -webkit-linear-gradient(left,var(--card-header),var(--card-header2));
       color: var(--primary-color);
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      padding-top: 2px;
-      padding-bottom: 1px;
-      text-align: left;
+
   }
-  .card-header.icon{
-      padding-left: 4px;
-  }
+ 
   .header-inactive{
       background: gray !important;
   }
@@ -306,8 +177,6 @@
   
   */
   .list-group{
-      border: solid;
-      border-width: 2px;
       border-bottom-color: var(--bottomborder-color);
       border-right-color: var(--bottomborder-color);
       border-left-color: var(--topborder-color);

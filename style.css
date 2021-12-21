@@ -142,10 +142,6 @@ Body styles
     text-align: center; 
     border: solid;
     border-width: 2px;
-    border-bottom-color: var(--topborder-color);
-    border-right-color: var(--topborder-color);
-    border-left-color: var(--bottomborder-color);
-    border-top-color: var(--bottomborder-color);
 
 }
 .application{
@@ -157,7 +153,6 @@ vertical-align: center;
 }
 
 h3{
-color: var(--primary-color) !important;
 font-weight: 100 ;
 text-align: center;
 font-size: 20px;
@@ -165,7 +160,6 @@ padding-top: 15px;
 
 }
 body {
-    background: var(--back-color);
     letter-spacing: 0.2pt;
     font-family: 'VT323', monospace;
     color: var(--primary-color);
@@ -183,7 +177,7 @@ Link color
 
 */
 a {
-    color: var(--interactive-color);
+
 }
 
 /*
@@ -193,7 +187,7 @@ Header
 */
 header {
   position: relative;
-  background-color: var(--darkColor);
+
   height: 100vh;
   min-height: 25rem;
   width: 100%;
@@ -308,31 +302,23 @@ Scrollbar (only chrome & safari)
 .btn{
     border-width: 2px;
     border-style: outset;
-    border-color: var(--topborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-bottom-color: var(--bottomborder-color);
-    background: var(--ui-color);
-    color: var(--text-color);
+ 
+
     padding: 0 0 4px;
     border-radius: 1px;
 }
 .btn:hover {
-    border: 2px inset var(--topborder-color);
-    background: var(--ui-color);
-    color: var(--bottomborder-color);
+
     box-shadow: -1px -1px #000;
 }
 .btn:focus {
-    border: 2px inset var(--topborder-color) !important;
-    background: var(--ui-color);
-    color: var(--bottomborder-color);
+
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
     background: url(background.bmp);
 }
 .btn:active {
-    border: 2px inset var(--topborder-color) !important;
-    color: var(--bottomborder-color);
+
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
     background: url(background.bmp);
@@ -347,11 +333,9 @@ button:focus{
 }
 .btn.disabled,.btn:disabled{
     cursor: default;
-    background-color: var(--ui-color);
+ 
     border-style: outset;
-    border-color: var(--topborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-bottom-color: var(--bottomborder-color);
+ 
     color: var(--topborder-color);
     text-shadow: 1px 1px #fff;
 }
@@ -366,12 +350,7 @@ CARDS
 .card{
     border: solid;
     border-width: 2px;
-    border-bottom-color: var(--bottomborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-left-color: var(--topborder-color);
-    border-top-color: var(--topborder-color);
-    background: var(--ui-color);
-    color:var(--text-color);
+
 }
 .card.square{
     border-radius: 0px;
@@ -380,15 +359,14 @@ CARDS
     border-radius: 0px;
 }
 .card.w95 .card-header{
-    background: var(--card-header);
+  
     /* OR #000082 is better?*/
 }
 .card-body{
     font-size: 24px;
 }
 .card-header{
-    background: -webkit-linear-gradient(left,var(--card-header),var(--card-header2));
-    color: var(--primary-color);
+   
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -412,18 +390,13 @@ LIST GROUPS
 .list-group{
     border: solid;
     border-width: 2px;
-    border-bottom-color: var(--bottomborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-left-color: var(--topborder-color);
-    border-top-color: var(--topborder-color);
-    background: var(--ui-color);
-    color:var(--text-color);
+
 }
 .list-group-item{
     position: relative;
     display: block;
     background: transparent;
-    color: var(--text-color);
+  
 }
 .list-group-item-primary{
     color: white;
@@ -434,73 +407,17 @@ LIST GROUPS
 }
 
 /*
-
-NAVBAR
-
-*/
-.navbar-95{
-    
-    background: var(--ui-color);
-    margin: 0;
-    border: 1px outset var(--topborder-color);
-    min-height: 40px;
-    padding: 0 6px;
-    color:#212529;
-}
-
-.navbar-brand{
-    color:#212529;
-    padding: 0 6px;
-}
-.nav-link{
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 9px;
-    color:#212529;
-}
-.dropdown-menu{
-    display: none;
-    min-width: 119px;
-    padding: 0 0 2px;
-    margin-left: 12px;
-    font-size: 24px;
-    list-style-type: none;
-    background: var(--ui-color);
-    border: 1.8px outset var(--topborder-color);
-    border-radius: 0;
-    -webkit-box-shadow: 1.5px 1.5px #000;
-    box-shadow: 1.5px 1.5px #000;
-}
-.dropdown-item{
-    padding: 1px 0 1px 2px;
-}
-.dropdown-item:hover{
-    color:#08216b;
-}
-.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
-    width: 32px;
-    background: url(icons/directory_closed_cool-5.png);
-}
-.navbar-light .navbar-toggler .navbar-toggler-icon {
-    width: 32px;
-    background: url(icons/directory_open_cool-5.png);
-}
-.navbar-toggler{
-    width: auto;
-}
-/*
-
 FOOTER
 
 */
 .taskbar{
     cursor: default;
-    background-color: var(--ui-color);
+   
     margin: 16px 0 0 0;
     vertical-align: center;
     padding: 3px 3px 3px 4px;
     bottom: 0;
-    border-top: 2px outset var(--topborder-color);
+    
     z-index: 228;
     width: 100%;
     margin-right: 0px;
@@ -514,10 +431,10 @@ FOOTER
 .taskbar .start-button {
     cursor: default;
     display: inline-block;
-    border: 2px outset var(--topborder-color);
+    
     padding: 0 4px 0 4px ;
     vertical-align: center;
-    box-shadow: 1px 1px var(--shadow-color);
+   
     margin-bottom: 2px;
     font-size: 24px;
     color: var(--text-color);
@@ -527,17 +444,17 @@ FOOTER
 
     cursor: default;
     display: inline-block;
-    border: 2px outset var(--topborder-color);
+    
     padding:  0 4px 0 4px ;
     vertical-align: center;
-    box-shadow: 1px 1px var(--shadow-color);
+    
     margin-bottom: 2px;
     font-size: 24px;
     width: 40px;
 
 }
 .taskbar .time {
-    color: var(--secondary-color) !important;
+
     text-align: right;
     font-size: 24px;
     margin-right: 0px;
@@ -566,9 +483,7 @@ FORMS
 */
 .form-95 {
     width: 100%;
-    border: 2px inset var(--topborder-color);
-    color: var(--bottomborder-color);
-    background: var(--ui-color);
+
     box-shadow: -1px -1px 0 0 #828282;
     margin-top: 4px;
     padding-left:2px;
@@ -637,99 +552,6 @@ input[type="checkbox"] + .form-check-label::after {
 input:checked + .form-check-label::after {
   display: block;
 }
-/*
-
-Progress bar
-
-*/
-.progress{
-    height: 1rem;
-    overflow: hidden;
-    font-size: .75rem;
-    background-color: var(--ui-color);
-    border-radius: 0rem;
-    border: 1px inset var(--ui-color);
-    color: var(--bottomborder-color);
-}
-.progress-bar{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: var(--ui-color);
-    text-align: center;
-    background-color: #1a0094;
-    transition: width .6s ease;
-}
-.progress-bar-blocks{
-    background-image: linear-gradient(90deg,transparent 75%, var(--ui-color) 25%);
-    background-size: 1rem 1rem;
-}
-
-/*
-
-TABS
-
-*/
-.tab-content {
-    background: var(--ui-color);
-    border: solid;
-    border-width: 2px;
-    border-bottom-color: var(--bottomborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-left-color: #fff;
-    border-top-color: var(--ui-color);
-    padding: 1rem 1.4rem;
-}
-.nav-tabs {
-    border-bottom: 2px solid white;
-}
-.nav-tabs .nav-item {
-    position: relative;
-    margin-bottom: 0;
-    background: var(--ui-color);
-    color: var(--darkColor);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-right: 1px solid #5A5A5A;
-    box-sizing: border-box;
-}
-.nav-tabs .nav-item .nav-link {
-    color: var(--darkColor);
-    padding: .2rem 1.8rem;
-    box-sizing: border-box;
-    transform: none;
-}
-.nav-tabs .nav-item .nav-link.active {
-    position: relative;
-    background: var(--ui-color);
-}
-.nav-tabs .nav-item:not(:first-child) .nav-link.active {
-    border-left: 1px solid #5A5A5A;
-}
-.nav-tabs .nav-item:first-child{
-    border-left: 2px solid white;
-}
-.nav-tabs .nav-item .nav-link.active:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    background: #c0c0c0;
-}
-.nav-tabs .nav-link {
-    border: 0;
-    padding: 1rem 1rem;
-}
 
 /*
 
@@ -739,17 +561,16 @@ MODAL
 */
 
 .modal-content{
-    box-shadow: 1px 1px 0 0 var(--bottomborder-color);
-    border: 1px solid var(--topborder-color);
+ 
     border-right-color: #848484;
     border-bottom-color: #848484;
-    background: var(--ui-color);
+
     padding: 2px;
 }
 .modal-header{
     height: 32px;
     background: -webkit-linear-gradient(left,#08216b,#a5cef7)!important;
-    color:var(--primary-color);
+
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 6px;
@@ -774,26 +595,6 @@ MODAL
     padding: 6px;
 }
 
-/*
-
-TABLES
-
-*/
-.table{
-    background: white;
-    border-color: var(--topborder-color);
-}
-.table-bordered{
-    border: 1px solid var(--topborder-color);
-}
-.table-bordered td, .table-bordered th {
-    border: 1px solid var(--topborder-color);
-}
-.table td, .table th {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 1px solid #c0c0c0;
-}
 
 /*
 
@@ -810,11 +611,6 @@ Dropup
     display: none;
     position: absolute;
     bottom: 42px;
-    box-shadow: 1px 1px 0 0 var(--bottomborder-color);
-    border: 2px solid var(--topborder-color);
-    border-right-color: var(--bottomborder-color);
-    border-bottom-color: var(--bottomborder-color);
-    background: var(--ui-color);
     padding: 0px ;
     min-width: 160px;
     
@@ -823,14 +619,14 @@ Dropup
   
   /* Links inside the dropup */
   .dropup-content a {
-    color: var(--text-color);
+
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropup links on hover */
-  .dropup-content a:hover {background-color: var(--interactive-color); color: var(--primary-color)}
+ 
   
   /* Show the dropup menu on hover */
   .dropup:hover .dropup-content {
@@ -839,7 +635,7 @@ Dropup
   
   /* Change the background color of the dropup button when the dropup content is shown */
   .dropup:hover .dropbtn {
-    background-color: var(--interactive-color);
+    
   }
 
   @media screen and (max-width: 600px) {
