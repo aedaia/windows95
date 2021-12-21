@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
-    --back-color: black;
+    --back-color: teal;
     --primary-color: white;
-    --text-color: grey;
-    --shadow-color: grey;
+    --text-color: black;
+    --shadow-color: black;
     --interactive-color: blue;
     --card-header: blue;
     --card-header2: pink;
     --ui-color: silver;
     --topborder-color: white;
     --bottomborder-color: #424242;
-    --dark: black;
+    --darkColor: black;
+    --secondary-color: grey;
   }
   
 
 :root {
     --light: teal;
-    --dark: #7f9cf5;
+    --dark: #491d8b;
+    --sky: pink;
+    --blue: blue;
    
   }
   
@@ -34,7 +37,7 @@
   }
   
   .switch {
-    border: 2px solid var(--dark);
+    border: 2px solid var(--darkColor);
     border-radius: 50px;
     height: 30px;
     width: 30px;
@@ -56,7 +59,7 @@
   }
   
   #switch-3 {
-    background-color: var(--purple);
+    background-color: var(--blue);
   }
   
   #switch-4 {
@@ -180,7 +183,7 @@ Link color
 
 */
 a {
-    color: fuchsia;
+    color: var(--interactive-color);
 }
 
 /*
@@ -190,7 +193,7 @@ Header
 */
 header {
   position: relative;
-  background-color: var(--dark);
+  background-color: var(--darkColor);
   height: 100vh;
   min-height: 25rem;
   width: 100%;
@@ -349,7 +352,7 @@ button:focus{
     border-color: var(--topborder-color);
     border-right-color: var(--bottomborder-color);
     border-bottom-color: var(--bottomborder-color);
-    color: grey;
+    color: var(--topborder-color);
     text-shadow: 1px 1px #fff;
 }
 
@@ -534,7 +537,7 @@ FOOTER
 
 }
 .taskbar .time {
-    color:var(--secondary-color);
+    color: var(--secondary-color) !important;
     text-align: right;
     font-size: 24px;
     margin-right: 0px;
@@ -565,7 +568,7 @@ FORMS
     width: 100%;
     border: 2px inset var(--topborder-color);
     color: var(--bottomborder-color);
-    background: #fff;
+    background: var(--ui-color);
     box-shadow: -1px -1px 0 0 #828282;
     margin-top: 4px;
     padding-left:2px;
@@ -621,7 +624,7 @@ input[type="radio"] + .form-check-label::after {
   height: 8px;
   margin: 6px;
   top: 3px;
-  background: var(--dark);
+  background: var(--darkColor);
 }
 input[type="checkbox"] + .form-check-label::after {
     display: none;
@@ -645,7 +648,7 @@ Progress bar
     font-size: .75rem;
     background-color: var(--ui-color);
     border-radius: 0rem;
-    border: 1px inset #d5d5d5;
+    border: 1px inset var(--ui-color);
     color: var(--bottomborder-color);
 }
 .progress-bar{
@@ -659,13 +662,13 @@ Progress bar
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #fff;
+    color: var(--ui-color);
     text-align: center;
     background-color: #1a0094;
     transition: width .6s ease;
 }
 .progress-bar-blocks{
-    background-image: linear-gradient(90deg,transparent 75%,#d5d5d5 25%);
+    background-image: linear-gradient(90deg,transparent 75%, var(--ui-color) 25%);
     background-size: 1rem 1rem;
 }
 
@@ -690,22 +693,22 @@ TABS
 .nav-tabs .nav-item {
     position: relative;
     margin-bottom: 0;
-    background: #c0c0c0;
-    color: var(--dark);
+    background: var(--ui-color);
+    color: var(--darkColor);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-right: 1px solid #5A5A5A;
     box-sizing: border-box;
 }
 .nav-tabs .nav-item .nav-link {
-    color: var(--dark);
+    color: var(--darkColor);
     padding: .2rem 1.8rem;
     box-sizing: border-box;
     transform: none;
 }
 .nav-tabs .nav-item .nav-link.active {
     position: relative;
-    background: #c0c0c0;
+    background: var(--ui-color);
 }
 .nav-tabs .nav-item:not(:first-child) .nav-link.active {
     border-left: 1px solid #5A5A5A;
@@ -809,12 +812,12 @@ Dropup
     bottom: 42px;
     box-shadow: 1px 1px 0 0 var(--bottomborder-color);
     border: 2px solid var(--topborder-color);
-    border-right-color: #848484;
-    border-bottom-color: #848484;
+    border-right-color: var(--bottomborder-color);
+    border-bottom-color: var(--bottomborder-color);
     background: var(--ui-color);
     padding: 0px ;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
     z-index: 1;
   }
   
