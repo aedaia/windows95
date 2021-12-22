@@ -12,15 +12,18 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="light.css">
-       
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 </head>
 
 <body class="windows-scrollbar">
 
-    <div id="mydiv" style="position: absolute; z-index: 1; cursor: pointer; width: 400px; top: 20px; left: 10px">
+
+    <!-- APPS -->
+    <div id="mydiv" style="position: absolute; z-index: 1; cursor: pointer; width: 100px; top: 20px; left: 10px">
         <div class="application" id="mydivheader">
             <img src="assets/icons/recycle_bin_full_cool-3.png" style="width: 48px; height: 48px"><br>
             <h3>Recycle Bin</h3>
@@ -29,19 +32,74 @@
 
     </div>
 
-    <div id="mydiv3" style="position: absolute; z-index: 1; cursor: pointer; width: 400px; top: 150px; left: 10px">
-        <div class="application" id="mydiv3header">
-            <img src="assets/icons/computer_2-5.png" style="width: 48px; height: 48px"><br>
-            <h3>UI work</h3>
+    <div id="mydiv3" style="position: absolute; z-index: 1; cursor: pointer; width: 100px; top: 150px; left: 10px">
+        <button class="application" id="mydiv3header" onclick="location.href='';">
+            <img src="assets/icons/paint_old-0.png" style="width: 48px; height: 48px"><br>
+            <h3>Design work</h3>
 
-        </div>
+        </button>
 
     </div>
 
-    
+    <div id="mydiv5" style="position: absolute; z-index: 1; cursor: pointer; width: 100px; top: 280px; left: 10px">
+        <button class="application" id="mydiv5header" onclick="location.href='';">
+            <img src="assets/icons/computer_2-5.png" style="width: 48px; height: 48px"><br>
+            <h3>Dev work</h3>
+
+        </button>
+
+    </div>
+
+    <div id="mydiv6" style="position: absolute; z-index: 1; cursor: pointer; width: 100px; top: 410px; left: 10px">
+        <button class="application" id="mydiv6header" onclick="location.href='';">
+            <img src="assets/icons/msagent-3.png" style="width: 48px; height: 48px"><br>
+            <h3>About me</h3>
+
+        </button>
+
+    </div>
+
+
 
 
     <br>
+
+    <!-- MODAL -->
+    <!-- <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a short bit of text saying some words</p>
+                    <div class=imageGallery>
+
+                    <img class="imageinGallery" src="assets/images/glow.jpg">
+                    <img class="imageinGallery" src="assets/images/dog.jpg">
+                    <img class="imageinGallery" src="assets/images/insta1.jpg">
+                    <img class="imageinGallery" src="assets/images/wastenet.jpg">
+                    
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-main">See more</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- END MODAL -->
+
     <div class="card" id="mydiv2" style="position: absolute; z-index: 1; cursor: move; width: 350px; right: 20px;">
         <div class="card-header" id="mydiv2header">
             <img src="assets/icons/computer_explorer-5.png" style="float:left; padding-top: 6px; width: 18px; margin-right: 8px; 
@@ -49,32 +107,33 @@
             <h4 class="my-0 font-weight-normal">About me</h4>
         </div>
         <div class="card-body">
-            My name's Eden, and I'm a UI designer, working at IBM >>
+           <p>My name's Eden, and I'm a UI designer, working at IBM >> </p>
             <img class="aboutMe" src="assets/face.jpg">
-            
 
-            
-            
+
+
+
         </div>
     </div>
 
     <!-- SWITCHER -->
 
-    <div class="card" id="mydiv4" style="position: absolute; z-index: 1; cursor: move; width: 300px; right: 130px; top:450px">
+    <div class="card" id="mydiv4"
+        style="position: absolute; z-index: 1; cursor: move; width: 300px; right: 130px; top:450px">
         <div class="card-header" id="mydiv4header">
             <img src="assets/icons/computer_explorer-5.png" style="float:left; padding-top: 6px; width: 18px; margin-right: 8px; 
             margin-left: -10px">
             <h4 class="my-0 font-weight-normal">Theme switcher</h4>
-            
-            
 
-            
+
+
+
         </div>
         <div class="card-body">
             <button id="toggle" class="button">Change theme</button>
-         
-   
-            
+
+
+
         </div>
     </div>
 
@@ -96,32 +155,31 @@
 
 
 
-                <a href="" class="btn social-button"><img
-                        src="assets/email.png" style="width: 22px"> </a>
-                <a href="" class="btn social-button"><img
-                        src="assets/linkedin.png" style="width: 24px"> </a>
-                <a href="" class="btn social-button"><img
-                        src="assets/instagram.png" style="width: 24px"> </a>
+                <a href="mailto:eden@monochromatic.co.uk" target="_blank" class="btn social-button" style="height: 37px; width: 37px; margin-top: 0; margin-bottom:1;"><i class="fa fa-envelope" style="font-size: 22px;"></i> </a>
+                <a href="https://www.linkedin.com/in/edensinclair/?originalSubdomain=uk" target="_blank" class="btn social-button" style="height: 37px; width: 37px; margin-top: 0; margin-bottom:1;"><i class="fa fa-linkedin" ></i> </a>
+                <a href="https://www.instagram.com/edensinclair_/?hl=en" target="_blank" class="btn social-button" style="height: 37px; width: 37px; margin-top: 0; margin-bottom:1;"><i class="fa fa-instagram"></i></a>
             </div>
-            <div class="col-4 time"><div id="MyClockDisplay" class="clock" onload="showTime()"></div> </div>
+            <div class="col-4 time">
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            </div>
 
             <script>
                 function startTime() {
-                  const today = new Date();
-                  let h = today.getHours();
-                  let m = today.getMinutes();
-                  let s = today.getSeconds();
-                  m = checkTime(m);
-                  s = checkTime(s);
-                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-                  setTimeout(startTime, 1000);
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
                 }
-                
+
                 function checkTime(i) {
-                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                  return i;
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
                 }
-                </script>
+            </script>
         </div>
 
     </footer>
@@ -129,7 +187,7 @@
     <!-- Scripts -->
 
     <script src="script.js"></script>
-  
+
     <script src="dragging.js"></script>
     <script src="clock.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

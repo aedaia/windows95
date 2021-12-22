@@ -13,6 +13,8 @@ body {
     --bottomborder-color: #424242;
     --darkColor: black;
     --secondary-color: grey;
+    --mainbutton-color: white;
+    --mainbutton-text: black;
   }
   
   .dark {
@@ -28,6 +30,8 @@ body {
     --bottomborder-color: #491d8b;
     --dark: black;
     --secondary-color: #a56eff;
+    --mainbutton-color: #8a3ffc;
+    --mainbutton-text: white;
   }
 
   .funky {
@@ -60,6 +64,10 @@ Body styles
     
 }
 
+p{
+    font-size: 22px !important;
+    line-height: 1.1;
+}
 
 .aboutMe{
     
@@ -75,9 +83,28 @@ Body styles
     border-top-color: var(--bottomborder-color);
 
 }
+
+.imageGallery{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.imageinGallery{
+    margin-top: 5px; 
+    width: 49.5%; 
+    height: 50%; 
+    text-align: center; 
+    border: solid;
+    border-width: 2px;
+    border-bottom-color: var(--topborder-color);
+    border-right-color: var(--topborder-color);
+    border-left-color: var(--bottomborder-color);
+    border-top-color: var(--bottomborder-color);
+}
 .application{
 width: 120px;
-/* background-color: red; */
+border-width: 0px !important;
+background-color: rgb(0,0,0,0) !important;
 height: 90px;
 text-align: center;
 vertical-align: center;
@@ -246,7 +273,7 @@ Scrollbar (only chrome & safari)
 .btn:hover {
     border: 2px inset var(--topborder-color);
     background: var(--ui-color);
-    color: var(--bottomborder-color);
+    color: var(--text-color);
     box-shadow: -1px -1px #000;
 }
 .btn:focus {
@@ -269,8 +296,38 @@ Scrollbar (only chrome & safari)
     padding-left: 8px;
     padding-right: 8px;
 }
+
+.fa{
+    color: var(--text-color);
+    vertical-align: center;
+    margin-bottom: -20px;
+
+}
+
+.btn-main{
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: var(--topborder-color) !important;
+    border-right-color: var(--bottomborder-color) !important;
+    border-bottom-color: var(--bottomborder-color) !important;
+    background: var(--mainbutton-color) !important;
+    color: var(--mainbutton-text) !important;
+    
+
+}
 button:focus{
     outline: 1px dotted;
+}
+
+.button{
+   
+    border-color: var(--secondary-color);
+    border-right-color: var(--bottomborder-color);
+    border-bottom-color: var(--bottomborder-color);
+    background: var(--mainbutton-color);
+    color: var(--mainbutton-text);
+    
+    border-radius: 1px;
 }
 .btn.disabled,.btn:disabled{
     cursor: default;
@@ -469,7 +526,7 @@ FOOTER
     font-size: 24px;
     margin-right: 0px;
     height: 20px;
-    margin-top: 1px;
+    margin-top: -0px;
     
 }
 
@@ -684,17 +741,21 @@ MODAL
 .modal-content{
     box-shadow: 1px 1px 0 0 var(--bottomborder-color);
     border: 1px solid var(--topborder-color);
-    border-right-color: #848484;
-    border-bottom-color: #848484;
+    border-right-color: var(--bottomborder-color);
+    border-bottom-color: var(--bottomborder-color);
     background: var(--ui-color);
     padding: 2px;
 }
+.modal-body{
+    color: var(--text-color);
+}
 .modal-header{
     height: 32px;
-    background: -webkit-linear-gradient(left,#08216b,#a5cef7)!important;
-    color:var(--primary-color);
+    background: -webkit-linear-gradient(left,var(--card-header),var(--card-header2))!important;
+    color: var(--primary-color);
     padding-top: 0px;
     padding-bottom: 0px;
+    border-bottom: 0px;
     padding-left: 6px;
     padding-right: 6px;
 }
@@ -715,6 +776,7 @@ MODAL
 }
 .modal-footer{
     padding: 6px;
+    border-top: var(--bottomborder-color);
 }
 
 /*
@@ -792,4 +854,18 @@ Dropup
     #mydiv4 {
         visibility: hidden;
      }
+
+     .imageinGallery{
+        margin-top: 5px; 
+        width: 100%; 
+        height: 50%; 
+        text-align: center; 
+        border: solid;
+        border-width: 2px;
+        border-bottom-color: var(--topborder-color);
+        border-right-color: var(--topborder-color);
+        border-left-color: var(--bottomborder-color);
+        border-top-color: var(--bottomborder-color);
+    }
+
   }
