@@ -269,6 +269,7 @@ Scrollbar (only chrome & safari)
     color: var(--text-color);
     padding: 0 0 4px;
     border-radius: 1px;
+    cursor: pointer;
 }
 .btn:hover {
     border: 2px inset var(--topborder-color);
@@ -496,7 +497,7 @@ FOOTER
       
 }
 .taskbar .start-button {
-    cursor: default;
+    cursor: pointer !important;
     display: inline-block;
     border: 2px outset var(--topborder-color);
     padding: 0 4px 0 4px ;
@@ -509,7 +510,7 @@ FOOTER
 
 .taskbar .social-button {
 
-    cursor: default;
+    cursor: pointer !important;
     display: inline-block;
     border: 2px outset var(--topborder-color);
     padding:  0 4px 0 4px ;
@@ -816,11 +817,11 @@ Dropup
 .dropup-content {
     display: none;
     position: absolute;
-    bottom: 42px;
-    box-shadow: 1px 1px 0 0 var(--bottomborder-color);
+    bottom: 40px;
+    box-shadow: 1px 0px 0 0 var(--shadow-color);
     border: 2px solid var(--topborder-color);
     border-right-color: var(--bottomborder-color);
-    border-bottom-color: var(--bottomborder-color);
+    border-bottom-color: var(--ui-color);
     background: var(--ui-color);
     padding: 0px ;
     min-width: 160px;
