@@ -530,6 +530,8 @@ FOOTER
     
 }
 
+
+
 .clock{
     width: 135px;
     margin-right: -12px;
@@ -867,5 +869,8 @@ Dropup
         border-left-color: var(--bottomborder-color);
         border-top-color: var(--bottomborder-color);
     }
-
+    #mydiv6{
+        top: 20px !important; 
+        left: 140px !important;
+    }
   }
